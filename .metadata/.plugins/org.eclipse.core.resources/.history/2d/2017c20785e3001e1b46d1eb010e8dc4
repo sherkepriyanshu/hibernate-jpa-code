@@ -1,0 +1,11 @@
+package Composite_key;
+
+import javax.persistence.Embeddable;
+import javax.persistence.Id;
+
+@Embeddable
+public class UserId {
+@Id
+	private String Email;
+
+}

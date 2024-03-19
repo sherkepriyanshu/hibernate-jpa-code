@@ -1,0 +1,6 @@
+package Composite_key;
+
+public class SaveUser {public static void main(String[] args) {
+	
+}
+}

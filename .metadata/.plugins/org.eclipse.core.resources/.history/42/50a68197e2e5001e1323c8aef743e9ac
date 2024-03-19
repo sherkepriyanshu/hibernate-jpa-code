@@ -1,0 +1,8 @@
+package spring_practice;
+
+public class TestCar {
+
+	public static void main(String[] args) {
+		
+	}
+}

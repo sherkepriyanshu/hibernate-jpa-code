@@ -1,0 +1,34 @@
+package One_To_Many_Uni;
+
+import java.util.List;
+
+public class SaveEmployeeAndDepartment {
+
+	
+	public static void main(String[] args) {
+		
+		Department d = new Department();
+		d.setName("development");
+		d.setLocation("Hyderabad");
+		
+		
+		Employee e1 = new Employee();
+		e1.setName("Priyanshu");
+		e1.setSalary(66666);
+		e1.setDesg("developer");
+		
+		Employee e2 = new Employee();
+		e2.setName("Himanshu");
+		e2.setSalary(75000);
+		e2.setDesg("Deputy Manager");
+		
+		Employee e3 = new Employee();
+		e3.setName("Tushar");
+		e3.setSalary(37500);
+		e3.setDesg("Software Engineer");
+		
+		
+		List<Employee> emps = new Em 
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestCfg.java&apos; to &apos;Many_To_Many_Uni/src/main/java/Many_To_Many_Uni&apos;&#x0D;&#x0A;- Original project: &apos;One_To_Many_Bi&apos;&#x0D;&#x0A;- Destination element: &apos;Many_To_Many_Uni/src/main/java/Many_To_Many_Uni&apos;&#x0D;&#x0A;- Original element: &apos;One_To_Many_Bi.TestCfg.java&apos;" description="Copy compilation unit" destination="=Many_To_Many_Uni/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Many_To_Many_Uni" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;One_To_Many_Bi{TestCfg.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1710260308364" units="1" version="1.0"/>
+</session>

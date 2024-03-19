@@ -1,0 +1,28 @@
+package Many_To_Many_Uni;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
+
+
+@Entity
+public class Student {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	@Column(nullable = false,unique = true)
+	private String batch_code;
+	@Column(nullable = false)
+	private String subject,trainer;
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	private List<Student> students;
+	
+}

@@ -1,0 +1,20 @@
+package Composite_key;
+
+import java.io.Serializable;
+
+import javax.persistence.Embeddable;
+import javax.persistence.Id;
+
+@Embeddable
+public class UserId implements Serializable {
+	@Id
+	private String Email;
+	@Id
+	private Long Phone;
+	@Override
+	public String toString() {
+		return "UserId [Email=" + Email + ", Phone=" + Phone + "]";
+	}
+	
+
+}

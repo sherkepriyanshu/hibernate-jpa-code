@@ -1,0 +1,7 @@
+package org.jsp.hibernate;
+
+public class FindALLEmpployee {
+public static void main(String[] args) {
+	
+}
+}

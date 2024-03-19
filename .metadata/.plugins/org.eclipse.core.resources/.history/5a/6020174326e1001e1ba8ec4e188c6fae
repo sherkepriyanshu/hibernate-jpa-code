@@ -1,0 +1,17 @@
+package Many_To_Many_Uni;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class FindBatch {
+
+	public static void main(String[] args) {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("development");
+
+		EntityManager manager = factory.createEntityManager();
+		
+		Batch b = manager.find(Batch.class, 1);
+		System.out.println(b.getStudents());
+	}
+}

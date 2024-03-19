@@ -1,0 +1,22 @@
+package Composite_key;
+
+import java.io.Serializable;
+
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class User  {
+	private String name;
+	private String Password;
+	@EmbeddedId
+	private UserId userId;
+	@Override
+	public String toString() {
+		return "User [name=" + name + ", Password=" + Password + ", userId=" + userId + "]";
+	}
+	
+	
+
+}

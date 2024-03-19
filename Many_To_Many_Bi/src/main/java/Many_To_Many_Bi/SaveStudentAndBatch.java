@@ -1,0 +1,75 @@
+package Many_To_Many_Bi;
+
+import java.util.Arrays;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class SaveStudentAndBatch {
+
+	public static void main(String[] args) {
+
+		Student s1 = new Student();
+		s1.setName("Ronaldo");
+		s1.setPhone(9999999998L);
+		s1.setPerc(85);
+
+
+		Student s2 = new Student();
+		s2.setName("Messi");
+		s2.setPhone(9999999997L);
+		s2.setPerc(95);
+
+
+		Student s3 = new Student();
+		s3.setName("Sunil Chettri");
+		s3.setPhone(9999999996L);
+		s3.setPerc(90);
+
+
+		Batch b2 = new Batch();
+		b2.setSubject("Ja"
+				+ "va");
+		b2.setTrainer("Keshava DE");
+		b2.setBatch_code("CJD-A6");
+
+
+		Batch b1 = new Batch();
+		b1.setSubject("JDBC");
+		b1.setTrainer("GuruRaja");
+		b1.setBatch_code("ADD-M3");
+
+
+		Batch b4 = new Batch();
+		b4.setSubject("SQL");
+		b4.setTrainer("Shwetha");
+		b4.setBatch_code("SQD-A11");
+
+		Batch b3 = new Batch();
+		b3.setSubject("SQL");
+		b3.setTrainer("Sharath");
+		b3.setBatch_code("SQL-A6");
+
+		b1.setStudents(Arrays.asList(s1,s2,s3));
+		b2.setStudents(Arrays.asList(s1,s2,s3));
+		b3.setStudents(Arrays.asList(s1,s3));
+		b4.setStudents(Arrays.asList(s2,s3));
+		
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("development");
+
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		
+		
+		manager.persist(b1);
+		manager.persist(b2);
+		manager.persist(b3);
+		manager.persist(b4);
+		
+		transaction.begin();
+		transaction.commit();
+
+	}
+}

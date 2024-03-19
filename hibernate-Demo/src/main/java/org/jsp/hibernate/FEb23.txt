@@ -1,0 +1,35 @@
+
+
+
+update(Object)
+->it is a method present in Session interface.
+->This method is used to update a record in the Database server.
+->This method will update the record if the identifier is present else it will throw Exception.
+
+saveOrUpdate(Object)
+->This method is declared in Session interface.
+->This method will either save or update a record in the Database server.
+->This method will save a record if the identifier is not present and it will update the record if the identifier is present.
+
+Example Program to update a  program by using update(object)
+Written
+
+delete(Object)
+->This method is declared in Session interface
+->This method is used to delete a record in the Database server.
+->It will throw IllegalArgumentException if the argument is not an entity or if the argument is null.
+
+
+Example Program to delete a record from a employee table
+
+
+
+Assigment Questions
+1. find employee by name
+2. find employee by designation
+3. find employee by salary
+4.verify employee by id and password
+5.fetch the phone numbers from employee table
+6.fetch the names from employee table
+7. fetch the salary from employee table where id=?
+8. fetch the phone numbers from employee table where salary=?

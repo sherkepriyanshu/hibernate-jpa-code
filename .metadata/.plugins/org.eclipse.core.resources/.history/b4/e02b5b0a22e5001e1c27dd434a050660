@@ -1,0 +1,5 @@
+package org.jsp.person;
+
+public class FetchPerson {
+
+}

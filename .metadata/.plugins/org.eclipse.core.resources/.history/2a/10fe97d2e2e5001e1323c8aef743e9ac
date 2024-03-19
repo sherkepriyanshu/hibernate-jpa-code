@@ -1,0 +1,13 @@
+package spring_practice;
+
+
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+public class TestCar {
+
+	public static void main(String[] args) {
+		Resource r = new ClassPathResource("Car.xml");
+		
+		
+	}
+}
